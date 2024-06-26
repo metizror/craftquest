@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /gu/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /gu/index.php [L]
